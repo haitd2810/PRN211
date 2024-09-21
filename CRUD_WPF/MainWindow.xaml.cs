@@ -236,6 +236,8 @@ namespace CRUD_WPF
     }
 }
 //BTVN: 
-//Them message "Do you want to delete this?"
-//thay thees department = group radio
-// Tìm hiểu cách binding data vào radio render
+//thoi gian nhap sau datetime.now thi se bao loi
+//xoa them messagebox de comfirm lai co xoa thong tin hay khong
+//thay the Gender = checkbox, combobox
+//thay the department = group radiobutton, group checkbox
+//lam the nao de binding bang radio button
