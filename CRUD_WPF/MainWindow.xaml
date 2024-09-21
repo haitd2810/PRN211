@@ -1,0 +1,102 @@
+﻿<Window x:Class="CRUD_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="dgvDisplay" Grid.Column="0" Grid.Row="0" AutoGenerateColumns="False" CanUserAddRows="False" SelectedCellsChanged="dgvDisplay_SelectedCellsChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="MSSV" Width="auto" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="FullName" Width="auto" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Gender" Width="auto" Binding="{Binding Gender}"></DataGridTextColumn>
+                <DataGridTextColumn Header="DepartName" Width="auto" Binding="{Binding Depart.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="DOB" Width="auto" Binding="{Binding Dob}"></DataGridTextColumn>
+                <DataGridTextColumn Header="GPT" Width="auto" Binding="{Binding Gpa}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <!--<div>-->
+                <ComboBox x:Name="cbxDepartFilter" Width="150" SelectionChanged="cbxDepartFilter_SelectionChanged">
+                </ComboBox>
+                <Button x:Name="btnFilter" Content="Filter" Click="btnFilter_Click"/>
+                <!--</div>-->
+
+            </StackPanel>
+            <WrapPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBox Name="txtSearch" Width="150px" TextChanged="txtSearch_TextChange"></TextBox>
+                <ComboBox Name="cbxSearch">
+                </ComboBox>
+                <Button Name="btnSearch" Content="Search" Click="btnSeach_Click"></Button>
+            </WrapPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0 20 0 0">
+                <WrapPanel Orientation="Horizontal">
+                    <Label Name="lbId" Content="Id" Width="50"></Label>
+                    <TextBox Name="txtId" Width="200" 
+                             Text="{Binding ElementName=dgvDisplay, Path=SelectedItem.Id
+                            , Mode=OneWay}"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal" Margin="0 10 0 0">
+                    <Label Name="lbName" Content="Name" Width="50"></Label>
+                    <TextBox Name="txtName" Width="200"
+                              Text="{Binding ElementName=dgvDisplay, Path=SelectedItem.Name
+                            , Mode=OneWay}"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal">
+                    <Label Name="lbGender" Content="Gender" Width="50"></Label>
+                    <!--<RadioButton Name="rdbMale" VerticalAlignment="Center"/>
+                    <Label Content="Male" Margin="0 0 50 0"/>
+                    <RadioButton Name="rdbFemale" IsChecked="true" VerticalAlignment="Center"/>
+                    <Label Content="Female"/>-->
+                    <CheckBox Name="cbMale" VerticalAlignment="Center" 
+                              IsChecked="{Binding ElementName=dgvDisplay,
+                              Path=SelectedItem.Gender, Mode=OneWay}" Checked="CheckBox_Checked"/>
+                    <Label Content="Male" Margin="0 0 50 0"/>
+                    <CheckBox Name="cbFemale" VerticalAlignment="Center"
+                               IsChecked="{Binding ElementName=dgvDisplay,
+                               Path=SelectedItem.Gender, Mode=OneWay}"
+                               Checked="CheckBox_Checked"/>
+                    <Label Content="Female"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal">
+                    <Label Name="lbDepart" Content="Department" Width="auto"></Label>
+                    <ComboBox Name="CbxDepart" Width="150"
+                              SelectedValue="{Binding ElementName=dgvDisplay,
+                              Path=SelectedItem.Depart.Name, Mode=OneWay}">
+
+                    </ComboBox>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal" Margin="0 10 0 0">
+                    <Label Name="lbDob" Content="DOB" Width="auto" Margin="0 0 18 0"></Label>
+                    <DatePicker Name="dkbdob" Width="150"
+                                SelectedDate="{Binding ElementName=dgvDisplay,
+                                Path=SelectedItem.Dob, Mode=OneWay}"></DatePicker>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal" Margin="0 10 0 0">
+                    <Label Name="lbgpa" Content="GPA" Width="auto" Margin="0 0 18 0"></Label>
+                    <TextBox Name="txtGPA" Width="150"
+                             Text="{Binding ElementName=dgvDisplay,
+                             Path=SelectedItem.Gpa, Mode=OneWay}"></TextBox>
+                </WrapPanel>
+                <Grid Margin="0 10 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Name="btnInsert" Content="Insert" Width="50" Grid.Column="0" Margin="19,0,20,0" Click="Insert_Click"/>
+                    <Button Name="btnUpdate" Content="Update" Width="50" Grid.Column="1" Click="btnUpdate_Click"/>
+                    <Button Name="btnDelete" Content="Delete" Width="50" Grid.Column="2" Click="btnDelete_Click"/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
