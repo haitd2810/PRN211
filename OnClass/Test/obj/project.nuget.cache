@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "f3PMHYr/CKY=",
+  "success": false,
+  "projectFilePath": "E:\\KY6\\PRN221\\SourceCode\\OnClass\\OnClass\\Test\\Test.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project CRUD_Slot2 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project CRUD_Slot2 supports: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "CRUD_Slot2",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
