@@ -1,0 +1,45 @@
+﻿<Window x:Class="DemoLayout_Slot2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoLayout_Slot2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions> <!--dinh nghia cot-->
+            <ColumnDefinition Width="100"></ColumnDefinition> <!--Kich thuoc co dinh,khong phu thuoc vao kich thuoc cua window cung nhu du lieu-->
+            <ColumnDefinition Width="Auto"></ColumnDefinition> <!--Kich thuoc khong co dinh, phu thuoc vao du lieu, chon lam sao cho phu hop nhat-->
+            <ColumnDefinition Width="*"></ColumnDefinition> <!--Kich thuoc tuong doi khong co dinh phu thuoc size cua window-->
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Column="3" Grid.Row="0"> <!--neu khogn ro hang cot thi mac dinh bang khong-->
+            <Button Content="Left" DockPanel.Dock="Left" Width="Auto"></Button>
+            <Button Content="Right" DockPanel.Dock="Right" Width="Auto"></Button>
+            <Button Content="Top" DockPanel.Dock="Top" Height="30"></Button>
+            <Button Content="Bottom" DockPanel.Dock="Bottom" Height="30"></Button>
+            <Button Content="Left2" DockPanel.Dock="Left" Width="50" Visibility="Hidden"></Button>
+            <!--Luon luon co thang doi xung ngay sau no-->
+        </DockPanel> <!--vi tri bat dau tu 0 va ket thuc n-1-->
+        <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Vertical"> <!--mac dinh la vertical-->
+            <Label Content="Hello FPTers_1"  Width="Auto"/>
+            <Label Content="Hello FPTers_2"  Width="Auto"/>
+            <Label Content="Hello FPTers_3"  Width="Auto"/>
+            <Label Content="Hello FPTers_4"  Width="Auto"/>
+            <Label Content="Hello FPTers_5"  Width="Auto"/>
+        </StackPanel>
+        <WrapPanel Grid.Column="3" Grid.Row="2" Orientation="Vertical"> <!--mac dinh Hori...-->
+            <Label Content="Hello FPTers_1"  Width="Auto" Height="Auto"/>
+            <Label Content="Hello FPTers_2"  Width="Auto" Height="Auto"/>
+            <Label Content="Hello FPTers_3"  Width="Auto" Height="Auto"/>
+            <Label Content="Hello FPTers_4"  Width="Auto" Height="Auto"/>
+            <Label Content="Hello FPTers_5"  Width="Auto" Height="Auto"/>
+        </WrapPanel>
+    </Grid>
+</Window>
