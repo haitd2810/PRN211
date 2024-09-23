@@ -25,17 +25,6 @@ namespace CRUD_WPF
         {
             InitializeComponent();
         }
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-            if (sender == cbMale && cbFemale.IsChecked == true)
-            {
-                cbFemale.IsChecked = false;
-            }
-            else if (sender == cbFemale && cbMale.IsChecked == true)
-            {
-                cbMale.IsChecked = false;
-            }
-        }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -135,8 +124,10 @@ namespace CRUD_WPF
         {
             txtId.Text = string.Empty;
             txtName.Text = string.Empty;
-            cbFemale.IsChecked = false;
-            cbFemale.IsChecked = false;
+            rdbMale.IsChecked = false;
+            rdbFemale.IsChecked = true;
+            //cbFemale.IsChecked = false;
+            //cbFemale.IsChecked = false;
             CbxDepart.SelectedIndex = 0;
             dkbdob.SelectedDate = null;
             txtGPA.Text = string.Empty;
@@ -147,7 +138,8 @@ namespace CRUD_WPF
             {
                 int id = int.Parse(txtId.Text);
                 string name = txtName.Text;
-                bool gender = cbMale.IsChecked.Value;
+                //bool gender = cbMale.IsChecked.Value;
+                bool gender = rdbMale.IsChecked == true;
                 string departId = PRN221Context.Instance.Departments.Where(x => x.Name.Equals(CbxDepart.SelectedValue))
                                                                     .Select(x => x.Id).FirstOrDefault();
                 float gpa = float.Parse(txtGPA.Text);
@@ -206,7 +198,8 @@ namespace CRUD_WPF
         private Student setValue(Student st)
         {
             st.Name = txtName.Text;
-            st.Gender = cbMale.IsChecked.Value;
+            //st.Gender = cbMale.IsChecked.Value;
+            st.Gender = rdbMale.IsChecked.Value;
             st.DepartId = PRN221Context.Instance.Departments.Where(x => x.Name.Equals(CbxDepart.SelectedValue))
                                                                     .Select(x => x.Id).FirstOrDefault();
             st.Gpa = float.Parse(txtGPA.Text);

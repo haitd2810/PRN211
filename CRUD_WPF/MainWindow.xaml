@@ -52,19 +52,21 @@
                 </WrapPanel>
                 <WrapPanel Orientation="Horizontal">
                     <Label Name="lbGender" Content="Gender" Width="50"></Label>
-                    <!--<RadioButton Name="rdbMale" VerticalAlignment="Center"/>
+                    <RadioButton IsChecked="{Binding ElementName=dgvDisplay,
+                        Path=SelectedItem.Gender, Mode=OneWay}" Name="rdbMale" VerticalAlignment="Center"/>
                     <Label Content="Male" Margin="0 0 50 0"/>
-                    <RadioButton Name="rdbFemale" IsChecked="true" VerticalAlignment="Center"/>
-                    <Label Content="Female"/>-->
-                    <CheckBox Name="cbMale" VerticalAlignment="Center" 
+                    <RadioButton IsChecked="{Binding ElementName=dgvDisplay,
+                        Path=SelectedItem.Female, Mode=OneWay}" Name="rdbFemale" VerticalAlignment="Center"/>
+                    <Label Content="Female"/>
+                    <!--<CheckBox Name="cbMale" VerticalAlignment="Center" 
                               IsChecked="{Binding ElementName=dgvDisplay,
                               Path=SelectedItem.Gender, Mode=OneWay}" Checked="CheckBox_Checked"/>
                     <Label Content="Male" Margin="0 0 50 0"/>
                     <CheckBox Name="cbFemale" VerticalAlignment="Center"
                                IsChecked="{Binding ElementName=dgvDisplay,
                                Path=SelectedItem.Gender, Mode=OneWay}"
-                               Checked="CheckBox_Checked"/>
-                    <Label Content="Female"/>
+                               Checked="CheckBox_Checked"/>-->
+                    <!--<Label Content="Female"/>-->
                 </WrapPanel>
                 <WrapPanel Orientation="Horizontal">
                     <Label Name="lbDepart" Content="Department" Width="auto"></Label>

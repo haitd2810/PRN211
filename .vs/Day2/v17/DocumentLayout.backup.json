@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C79D6E3E-B8B2-4CCD-8EFA-45907CF206F5}|CRUD_WPF\\CRUD_WPF.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\crud_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C79D6E3E-B8B2-4CCD-8EFA-45907CF206F5}|CRUD_WPF\\CRUD_WPF.csproj|solutionrelative:crud_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D6E3E-B8B2-4CCD-8EFA-45907CF206F5}|CRUD_WPF\\CRUD_WPF.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\crud_wpf\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79D6E3E-B8B2-4CCD-8EFA-45907CF206F5}|CRUD_WPF\\CRUD_WPF.csproj|solutionrelative:crud_wpf\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,11 +86,32 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+              "Name": "ST:16:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:16:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_WPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CRUD_WPF\\MainWindow.xaml",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_WPF\\MainWindow.xaml",
+              "RelativeToolTip": "CRUD_WPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T06:53:37.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_WPF\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "CRUD_WPF\\Models\\Student.cs",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_WPF\\Models\\Student.cs",
+              "RelativeToolTip": "CRUD_WPF\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T09:56:54.215Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -100,21 +125,10 @@
               "RelativeDocumentMoniker": "CRUD_WPF\\MainWindow.xaml.cs",
               "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_WPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "CRUD_WPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAA8wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T06:59:51.549Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_WPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "CRUD_WPF\\MainWindow.xaml",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_WPF\\MainWindow.xaml",
-              "RelativeToolTip": "CRUD_WPF\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-21T06:53:37.551Z"
             }
           ]
         }

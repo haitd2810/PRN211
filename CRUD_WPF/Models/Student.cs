@@ -13,5 +13,6 @@ namespace CRUD_WPF.Models
         public double Gpa { get; set; }
 
         public virtual Department Depart { get; set; } = null!;
+        public bool Female { get => !Gender; }
     }
 }
