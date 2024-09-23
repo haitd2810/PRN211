@@ -32,6 +32,7 @@ namespace CRUD_WPF
             loadDepart();
             cbxSearch.ItemsSource = element;
             cbxSearch.SelectedIndex = 1;
+            LoadDeptRadio();
         }
         string[] element = { "Id", "Name", "Gender", "Depart Name", "Dob", "GPA" };
         private void Load()
@@ -44,7 +45,7 @@ namespace CRUD_WPF
         private void loadDepart()
         {
             var dept = PRN221Context.Instance.Departments.Select(x => x.Name).ToList();
-            dept.Insert(0,"All");
+            dept.Insert(0, "All");
             cbxDepartFilter.Items.Clear();
             cbxDepartFilter.ItemsSource = dept;
             cbxDepartFilter.SelectedIndex = 0;
@@ -117,7 +118,7 @@ namespace CRUD_WPF
                 PRN221Context.Instance.SaveChanges();
                 Filter();
             }
-            
+
         }
 
         private void ClearForm()
@@ -140,8 +141,9 @@ namespace CRUD_WPF
                 string name = txtName.Text;
                 //bool gender = cbMale.IsChecked.Value;
                 bool gender = rdbMale.IsChecked == true;
-                string departId = PRN221Context.Instance.Departments.Where(x => x.Name.Equals(CbxDepart.SelectedValue))
-                                                                    .Select(x => x.Id).FirstOrDefault();
+                //string departId = PRN221Context.Instance.Departments.Where(x => x.Name.Equals(CbxDepart.SelectedValue))
+                //                                                    .Select(x => x.Id).FirstOrDefault();
+                string departId = spnDept.Tag.ToString();
                 float gpa = float.Parse(txtGPA.Text);
                 DateTime? dob = dkbdob.SelectedDate.Value;
                 return new Student()
@@ -153,7 +155,7 @@ namespace CRUD_WPF
                     Gpa = gpa,
                     Dob = dob
                 };
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 return null;
             }
@@ -161,7 +163,7 @@ namespace CRUD_WPF
 
         private void dgvDisplay_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
         {
-            Student st = dgvDisplay.SelectedItem as Student;
+            //Student st = dgvDisplay.SelectedItem as Student;
             /* Có thể xài if nhưng hiện tại đang để comment để sử dụng binding data trong UI */
             //if (st != null) {
             //    txtId.Text = st.Id.ToString();
@@ -172,6 +174,10 @@ namespace CRUD_WPF
             //    dkbdob.SelectedDate = st.Dob;
             //    txtGPA.Text = st.Gpa.ToString();
             //}
+            Student st = dgvDisplay.SelectedItem as Student;
+            if (st != null) {
+                LoadDeptRadio(st.DepartId);
+            }
         }
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
@@ -193,7 +199,7 @@ namespace CRUD_WPF
             {
                 MessageBox.Show("Not exist student!");
             }
-            
+
         }
         private Student setValue(Student st)
         {
@@ -213,7 +219,7 @@ namespace CRUD_WPF
             {
                 var x = PRN221Context.Instance.Students.Find(int.Parse(txtId.Text));
                 if (x != null) {
-                    var result = MessageBox.Show("Do you want to delete this?", "Confirm",MessageBoxButton.YesNo);
+                    var result = MessageBox.Show("Do you want to delete this?", "Confirm", MessageBoxButton.YesNo);
                     if (result == MessageBoxResult.Yes)
                     {
                         PRN221Context.Instance.Students.Remove(x);
@@ -226,11 +232,32 @@ namespace CRUD_WPF
                 return;
             }
         }
+        private void LoadDeptRadio(string id = "SE")
+        {
+            spnDept.Children.Clear();
+            foreach (var d in PRN221Context.Instance.Departments)
+            {
+                RadioButton rd = new RadioButton()
+                {
+                    Content = d.Name,
+                    Name = d.Id,
+                    IsChecked = d.Id.Equals(id)
+                };
+                rd.Click += Rd_click;
+                spnDept.Children.Add(rd);
+            }
+        }
+
+        private void Rd_click(object sender, RoutedEventArgs e)
+        {
+            RadioButton rd = sender as RadioButton;
+            spnDept.Tag = rd.Name;
+        }
     }
 }
-//BTVN: 
-//thoi gian nhap sau datetime.now thi se bao loi
-//xoa them messagebox de comfirm lai co xoa thong tin hay khong
-//thay the Gender = checkbox, combobox
-//thay the department = group radiobutton, group checkbox
-//lam the nao de binding bang radio button
+//BTVN:
+//thay thế radio box của department thành checkbox (chỉ 1 checkbox được check mỗi lần)
+// có thể dùng collection để duyệt
+// hoặc code lệnh mỗi lần click thì sẽ xóa cũ đi rồi add mới lại
+// Gender cũng xử lý qua radio box - checkbox - combobox
+// department cũng xử lý qua radio box - checkbox - combobox
