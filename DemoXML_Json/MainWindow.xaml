@@ -1,0 +1,31 @@
+﻿<Window x:Class="DemoXML_Json.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoXML_Json"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="dgvDisplay" Grid.Column="0" Grid.Row="0" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <!--<DataGridTextColumn Header="author" Width="auto" Binding="{Binding author}"></DataGridTextColumn>
+                <DataGridTextColumn Header="title" Width="auto" Binding="{Binding title}"></DataGridTextColumn>
+                <DataGridTextColumn Header="genre" Width="auto" Binding="{Binding genre}"></DataGridTextColumn>
+                <DataGridTextColumn Header="price" Width="auto" Binding="{Binding price}"></DataGridTextColumn>
+                <DataGridTextColumn Header="publish_date" Width="auto" Binding="{Binding publish_date}"></DataGridTextColumn>
+                <DataGridTextColumn Header="description" Width="auto" Binding="{Binding description}"></DataGridTextColumn>-->
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Vertical" Grid.Column="1" Margin="0,11,0,0">
+            <WrapPanel Name="wrButton">
+                <Button Name="btnLoad" Content="Load" Width="100" Margin="23,0,22,0" Click="btnLoad_Click"/>
+                <Button Name="btnSave" Content="Save" Width="100" Click="btnSave_Click"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
