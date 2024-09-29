@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA4A5EB4-CEB9-4C57-87BB-B5775FE81B59}|DemoXML_Json\\DemoXML_Json.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\demoxml_json\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BA4A5EB4-CEB9-4C57-87BB-B5775FE81B59}|DemoXML_Json\\DemoXML_Json.csproj|solutionrelative:demoxml_json\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}|Razor\\Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\razor\\pages\\demo\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}|Razor\\Razor.csproj|solutionrelative:razor\\pages\\demo\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA4A5EB4-CEB9-4C57-87BB-B5775FE81B59}|DemoXML_Json\\DemoXML_Json.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\demoxml_json\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4A5EB4-CEB9-4C57-87BB-B5775FE81B59}|DemoXML_Json\\DemoXML_Json.csproj|solutionrelative:demoxml_json\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}|Razor\\Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\razor\\pages\\demo\\view.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}|Razor\\Razor.csproj|solutionrelative:razor\\pages\\demo\\view.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA4A5EB4-CEB9-4C57-87BB-B5775FE81B59}|DemoXML_Json\\DemoXML_Json.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\demoxml_json\\models\\class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4A5EB4-CEB9-4C57-87BB-B5775FE81B59}|DemoXML_Json\\DemoXML_Json.csproj|solutionrelative:demoxml_json\\models\\class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}|Razor\\Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\razor\\pages\\demo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}|Razor\\Razor.csproj|solutionrelative:razor\\pages\\demo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}|Razor\\Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\razor\\pages\\demo\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}|Razor\\Razor.csproj|solutionrelative:razor\\pages\\demo\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,40 +102,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class2.cs",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\DemoXML_Json\\Models\\Class2.cs",
-              "RelativeDocumentMoniker": "DemoXML_Json\\Models\\Class2.cs",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\DemoXML_Json\\Models\\Class2.cs",
-              "RelativeToolTip": "DemoXML_Json\\Models\\Class2.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA0wBYAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "View.cshtml.cs",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\Razor\\Pages\\Demo\\View.cshtml.cs",
+              "RelativeDocumentMoniker": "Razor\\Pages\\Demo\\View.cshtml.cs",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\Razor\\Pages\\Demo\\View.cshtml.cs",
+              "RelativeToolTip": "Razor\\Pages\\Demo\\View.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:07:04.209Z",
+              "WhenOpened": "2024-09-28T10:16:23.404Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\Razor\\Pages\\Demo\\View.cshtml",
+              "RelativeDocumentMoniker": "Razor\\Pages\\Demo\\View.cshtml",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\Razor\\Pages\\Demo\\View.cshtml",
+              "RelativeToolTip": "Razor\\Pages\\Demo\\View.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T10:15:51.527Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\DemoXML_Json\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "DemoXML_Json\\MainWindow.xaml",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\DemoXML_Json\\MainWindow.xaml",
-              "RelativeToolTip": "DemoXML_Json\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-25T06:41:24.505Z",
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\Razor\\Pages\\Demo\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Razor\\Pages\\Demo\\Index.cshtml.cs",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\Razor\\Pages\\Demo\\Index.cshtml.cs",
+              "RelativeToolTip": "Razor\\Pages\\Demo\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T09:17:02.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\DemoXML_Json\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DemoXML_Json\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\DemoXML_Json\\MainWindow.xaml.cs",
-              "RelativeToolTip": "DemoXML_Json\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAcwDoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T07:08:22.177Z",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\Razor\\Pages\\Demo\\Index.cshtml",
+              "RelativeDocumentMoniker": "Razor\\Pages\\Demo\\Index.cshtml",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\Razor\\Pages\\Demo\\Index.cshtml",
+              "RelativeToolTip": "Razor\\Pages\\Demo\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T09:06:39.809Z",
               "EditorCaption": ""
             }
           ]

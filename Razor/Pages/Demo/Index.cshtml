@@ -1,0 +1,38 @@
+﻿@page
+@model Razor.Pages.Demo.IndexModel
+@{
+
+}
+<h1 style="color: red;">Welcome Demo Page</h1>
+@* truyen data bang viewData *@
+@* <h2>Hello @ViewData["Name"]</h2> *@
+
+@* cach 2: su dung page model va page view de truyen data *@
+<h2>Welcome @Model.Name</h2>
+<h2>Id: @Model.Id</h2>
+@* cach 1- 2- 3 *@
+@* <form method="post">
+    <label>Id: </label>
+    <input type="text" name="id" /> <br/>
+    <label>Name: </label>
+    <input name="name" type="text" /><br/>
+    <input type="submit" value="Send" class="btn btn-success" />
+</form> *@
+@* cach 4 *@
+@* <form method="post">
+    <label>id: </label>
+    <input type="text" asp-for="@Model.Id" /> <br/>
+    <label>name: </label>
+    <input type="text" asp-for="@Model.Name" /><br/>
+    <input type="submit" value="send" class="btn btn-success" />
+</form>  *@
+
+@* //truyen data to other model *@
+<form method="post" action="/Demo/View">
+    @Html.AntiForgeryToken()
+    <label>Id: </label>
+    <input type="text" name="id" /> <br/>
+    <label>Name: </label>
+    <input name="name" type="text" /><br/>
+    <input type="submit" value="Send" class="btn btn-success" />
+</form>
