@@ -5,12 +5,16 @@ namespace Razor.Pages.Demo
 {
     public class ViewModel : PageModel
     {
+        [BindProperty]
+        public int Id { get; set; }
+        [BindProperty]
+        public string NameView { get; set; }
         public void OnGet()
         {
         }
 
         public IActionResult OnPost() {
-            return Redirect("/Demo/View");
+            return Page();
         }
     }
 }

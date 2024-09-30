@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD_WPF", "CRUD_WPF\CRUD_W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoXML_Json", "DemoXML_Json\DemoXML_Json.csproj", "{BA4A5EB4-CEB9-4C57-87BB-B5775FE81B59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor", "Razor\Razor.csproj", "{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Razor", "Razor\Razor.csproj", "{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadDB_Razor", "LoadDB_Razor\LoadDB_Razor.csproj", "{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

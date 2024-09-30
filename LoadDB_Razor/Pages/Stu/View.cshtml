@@ -1,0 +1,158 @@
+﻿@page
+@model LoadDB_Razor.Pages.Stu.ViewModel
+@{
+}
+<h1>Welcome to View Page</h1>
+<a href="Add" class="btn btn-primary">Create</a>
+@* normal
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Dob</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var st in Model.Stds)
+        {
+            <tr>
+                <td>@st.Id</td>
+                <td>@st.Name</td>
+                <td>@st.Gender</td>
+                <td>@st.Depart.Name</td>
+                <td>@st.Dob</td>
+                <td>@st.Gpa</td>
+            </tr>
+        }
+    </tbody>
+</table> *@
+
+<h2>display gender by male or female</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Dob</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var st in Model.Stds)
+        {
+            string gender = @st.Gender ? "Male" : "Female";
+            <tr>
+                <td>@st.Id</td>
+                <td>@st.Name</td>
+                @* cach 1: *@
+                <td>@(st.Gender? "male" : "female")</td>
+                @* cach 2: su dung bien phu *@
+                @* <td>@gender</td> *@
+                <td>@st.Depart.Name</td>
+                <td>@st.Dob</td>
+                <td>@st.Gpa</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2> Display gender by checkbox</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Dob</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var st in Model.Stds)
+        {
+            string gender = @st.Gender ? "Male" : "Female";
+            <tr>
+                <td>@st.Id</td>
+                <td>@st.Name</td>
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" disabled type="checkbox" id="flexSwitchCheckDefault" checked="@st.Gender">
+                    </div>
+                </td>
+                <td>@st.Depart.Name</td>
+                <td>@st.Dob</td>
+                <td>@st.Gpa</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2> Display gender by Radio box</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Dob</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var st in Model.Stds)
+        {
+            string gender = @st.Gender ? "Male" : "Female";
+            <tr>
+                <td>@st.Id</td>
+                <td>@st.Name</td>
+                <td>
+                    <input type="radio" disabled class="form-check-input" checked="@(st.Gender == true)" />
+                    @(st.Gender ? "Male" : "Female")
+                    <input type="radio" disabled class="form-check-input" checked="@(st.Gender == false)" value="Female" />
+                    @(!st.Gender ? "Female" : "Male")
+                </td>
+                <td>@st.Depart.Name</td>
+                <td>@st.Dob</td>
+                <td>@st.Gpa</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<h2> Display DOB by format</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Dob</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var st in Model.Stds)
+        {
+            string gender = @st.Gender ? "Male" : "Female";
+            <tr>
+                <td>@st.Id</td>
+                <td>@st.Name</td>
+                <td>@(st.Gender ? "male" : "female")</td>
+                <td>@st.Depart.Name</td>
+                <td>@(st.Dob?.ToString("dd/MM/yyyy"))</td>
+                <td>@st.Gpa</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,38 +1,96 @@
-﻿@page
+﻿@* @page
 @model Razor.Pages.Demo.IndexModel
 @{
+} *@
 
+@page
+@model Razor.Pages.Demo.ViewModel
+@{
 }
-<h1 style="color: red;">Welcome Demo Page</h1>
-@* truyen data bang viewData *@
-@* <h2>Hello @ViewData["Name"]</h2> *@
-
-@* cach 2: su dung page model va page view de truyen data *@
-<h2>Welcome @Model.Name</h2>
-<h2>Id: @Model.Id</h2>
-@* cach 1- 2- 3 *@
-@* <form method="post">
-    <label>Id: </label>
-    <input type="text" name="id" /> <br/>
-    <label>Name: </label>
-    <input name="name" type="text" /><br/>
-    <input type="submit" value="Send" class="btn btn-success" />
+<h1>Hello World!</h1>
+<p>Id: @Model.Id</p>
+<p>Name: @Model.NameView</p>
+@* <h1>Hello World!</h1>
+<p>Id: @Model.Id</p>
+<p>Name: @Model.Name</p> *@
+@* <p>Cach 1: Su dung truyen tham so qua name</p>
+<form method="post">
+    <div>
+        <label>ID: </label>
+        <input name="id" type="text" />
+    </div>
+    <div>
+        <label>Name: </label>
+        <input name="name" type="text" />
+    </div>
+    <input type="submit" value="Submit" />
 </form> *@
-@* cach 4 *@
-@* <form method="post">
-    <label>id: </label>
-    <input type="text" asp-for="@Model.Id" /> <br/>
-    <label>name: </label>
-    <input type="text" asp-for="@Model.Name" /><br/>
-    <input type="submit" value="send" class="btn btn-success" />
-</form>  *@
 
-@* //truyen data to other model *@
-<form method="post" action="/Demo/View">
-    @Html.AntiForgeryToken()
-    <label>Id: </label>
-    <input type="text" name="id" /> <br/>
-    <label>Name: </label>
-    <input name="name" type="text" /><br/>
-    <input type="submit" value="Send" class="btn btn-success" />
+
+@* <p>Cach 2: Truyen parameter ben OnPost with nameOfParam is same in element input</p>
+<form method="post">
+    <div>
+        <label>ID: </label>
+        <input name="id" type="text" />
+    </div>
+    <div>
+        <label>Name: </label>
+        <input name="name" type="text" />
+    </div>
+    <input type="submit" value="Submit" />
+</form> *@
+
+
+@* <p>Cach 3: Su dung ICollectionForm </p>
+<form method="post">
+    <div>
+        <label>ID: </label>
+        <input name="id" type="text"/>
+    </div>
+    <div>
+        <label>Name: </label>
+        <input name="name" type="text" />
+    </div>
+    <input type="submit" value="Submit"/>
+</form> *@
+
+
+@* <p>Cach 4: Su dung asp-for @Model.Attr</p> *@
+@* <form method="post">
+    <div>
+        <label>ID: </label>
+        <input asp-for="@Model.Id" type="text" />
+    </div>
+    <div>
+        <label>Name: </label>
+        <input asp-for="@Model.Name" type="text" />
+    </div>
+    <input type="submit" value="Submit" />
+</form> *@
+
+@* <p>Call Method post from other PageModel</p>
+<form method="post" asp-page="View">
+    <div>
+        <label>ID: </label>
+        <input name="id" type="text" />
+    </div>
+    <div>
+        <label>Name: </label>
+        <input name="name" type="text" />
+    </div>
+    <input type="submit" value="Submit" />
+</form> *@
+
+<p>passing data to other page model</p>
+<form method="post" asp-page="View">
+    <div>
+        <label>ID: </label>
+        <input asp-for="@Model.Id" type="text" />
+    </div>
+    <div>
+        <label>Name: </label>
+        @* BBinding data to NameView cua ViewModel *@
+        <input asp-for="@Model.NameView" type="text" />
+    </div>
+    <input type="submit" value="Submit" />
 </form>

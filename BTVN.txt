@@ -1,0 +1,5 @@
+//Task:
+//thử CRUD truyền data bằng cả 4 cách
+// Gender checkbox - radio box - combobox
+// Department checkbox - radio box - combobox
+// Có tất cả 36 dạng bài, nhưng làm ít nhất 9 dạng bài (tự chọn) (ít nhất mỗi phương pháp làm 2 bài)
