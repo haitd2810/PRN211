@@ -31,7 +31,7 @@
     </tbody>
 </table> *@
 
-<h2>display gender by male or female</h2>
+@* <h2>display gender by male or female</h2>
 <table class="table">
     <thead>
         <tr>
@@ -51,18 +51,18 @@
                 <td>@st.Id</td>
                 <td>@st.Name</td>
                 @* cach 1: *@
-                <td>@(st.Gender? "male" : "female")</td>
+                @* <td>@(st.Gender? "male" : "female")</td> *@
                 @* cach 2: su dung bien phu *@
                 @* <td>@gender</td> *@
-                <td>@st.Depart.Name</td>
-                <td>@st.Dob</td>
+                @* <td>@st.Depart.Name</td> *@
+                @* <td>@st.Dob</td>
                 <td>@st.Gpa</td>
             </tr>
         }
     </tbody>
-</table>
+</table> *@
 
-<h2> Display gender by checkbox</h2>
+@* <h2> Display gender by checkbox</h2>
 <table class="table">
     <thead>
         <tr>
@@ -92,9 +92,9 @@
             </tr>
         }
     </tbody>
-</table>
+</table> *@
 
-<h2> Display gender by Radio box</h2>
+@* <h2> Display gender by Radio box</h2>
 <table class="table">
     <thead>
         <tr>
@@ -125,10 +125,10 @@
             </tr>
         }
     </tbody>
-</table>
+</table> *@
 
 
-<h2> Display DOB by format</h2>
+@* <h2> Display DOB by format</h2>
 <table class="table">
     <thead>
         <tr>
@@ -151,6 +151,39 @@
                 <td>@st.Depart.Name</td>
                 <td>@(st.Dob?.ToString("dd/MM/yyyy"))</td>
                 <td>@st.Gpa</td>
+            </tr>
+        }
+    </tbody>
+</table> *@
+
+<h2> Slot 02_10</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Dob</th>
+            <th>GPA</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var st in Model.Stds)
+        {
+            string gender = @st.Gender ? "Male" : "Female";
+            <tr>
+                <td>@st.Id</td>
+                <td>@st.Name</td>
+                <td>@(st.Gender ? "male" : "female")</td>
+                <td>@st.Depart.Name</td>
+                <td>@(st.Dob?.ToString("dd/MM/yyyy"))</td>
+                <td>@st.Gpa</td>
+                <td>
+                    @* <a class="nav-link text-dark" href="/Stu/Update?sID=@st.Id">Update</a> *@
+                    <a class="nav-link text-dark" asp-page="/Stu/Update" asp-route-sID="@st.Id">Update</a>
+                </td>
             </tr>
         }
     </tbody>

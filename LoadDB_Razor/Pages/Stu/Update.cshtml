@@ -1,0 +1,177 @@
+﻿@page
+@model LoadDB_Razor.Pages.Stu.UpdateModel
+@{
+}
+<h1>Welcome to update</h1>
+
+@* <p>Checbox - radio</p>
+<form method="post">
+    <div class="row">
+        <div class="col-3">
+            <label>ID</label>
+            <div>
+                <input readonly class="form-control" name="ID" type="number" value="@Model.std.Id" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>Name</label>
+            <div>
+                <input name="name" required class="form-control" type="text" value="@Model.std.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Gender</label>
+            <div>
+                <input id="male" name="Gender" value="Male" type="checkbox" checked="@Model.std.Gender">
+                <span>Male</span>
+                <input id="female" name="Gender" value="Fmale" type="checkbox" checked="@(Model.std.Gender == false)">
+                <span>Female</span>
+            </div>
+        </div>
+        <div class="col-3">
+            <label>Department</label>
+            @foreach (var dp in Model.DList)
+            {
+                <div>
+                    <input name="Department" id="department-@dp.Id" type="radio" value="@dp.Id" checked="@(Model.std.DepartId == dp.Id)">
+                    <span>@dp.Name</span>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Date Of Birth</label>
+            <div>
+                <input name="Dob" type="date" required value="@Model.std.Dob?.ToString("yyyy-MM-dd")" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>GPA</label>
+            <div>
+                <input name="GPA" required class="form-control" type="text" value="@Model.std.Gpa" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</form> *@
+<p>Checkbox - Checkbox</p>
+<form class="col-12" method="post" asp-page="Edit">
+    <div class="row">
+        <div class="col-3">
+            <label>ID</label>
+            <div>
+                <input readonly class="form-control" asp-for="@Model.std.Id" type="number" value="@Model.std.Id" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>Name</label>
+            <div>
+                <input required asp-for="@Model.std.Name" class="form-control" type="text" value="@Model.std.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Gender</label>
+            <div>
+                <select asp-for="@Model.std.Gender">
+                    <option value="true" selected="@(Model.std.Gender == true)">Male</option>
+                    <option value="false" selected="@(Model.std.Gender == false)">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-3">
+            <label>Department</label>
+            @foreach (var dp in Model.DList)
+            {
+                <div>
+                    <input asp-for="@Model.std.DepartId" value="@dp.Id" type="checkbox">
+                    <span>@dp.Name</span>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Date Of Birth</label>
+            <div>
+                <input required asp-for="@Model.std.Dob" type="date" value="@Model.std.Dob?.ToString("yyyy-MM-dd")" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>GPA</label>
+            <div>
+                <input required asp-for="@Model.std.Gpa" class="form-control" type="text" value="@Model.std.Gpa" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</form>
+@* <p>ComboBox - Radio</p>
+<form class="col-12" method="post" asp-page="Edit">
+    <div class="row">
+        <div class="col-3">
+            <label>ID</label>
+            <div>
+                <input readonly class="form-control" asp-for="@Model.std.Id" type="number" value="@Model.std.Id" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>Name</label>
+            <div>
+                <input required asp-for="@Model.std.Name" class="form-control" type="text" value="@Model.std.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Gender</label>
+            <div>
+                <select asp-for="@Model.std.Gender">
+                    <option value="true" selected="@(Model.std.Gender == true)">Male</option>
+                    <option value="false" selected="@(Model.std.Gender == false)">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-3">
+            <label>Department</label>
+            @foreach (var dp in Model.DList)
+            {
+                <div>
+                    <input asp-for="@Model.std.DepartId" id="department-@dp.Id" type="radio" value="@dp.Id" checked="@(Model.std.DepartId == dp.Id)">
+                    <span>@dp.Name</span>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Date Of Birth</label>
+            <div>
+                <input required asp-for="@Model.std.Dob" type="date" value="@Model.std.Dob?.ToString("yyyy-MM-dd")" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>GPA</label>
+            <div>
+                <input required asp-for="@Model.std.Gpa" class="form-control" type="text" value="@Model.std.Gpa" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</form> *@

@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\loaddb_razor\\pages\\stu\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|solutionrelative:loaddb_razor\\pages\\stu\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\loaddb_razor\\pages\\stu\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|solutionrelative:loaddb_razor\\pages\\stu\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\loaddb_razor\\pages\\stu\\add.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|solutionrelative:loaddb_razor\\pages\\stu\\add.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\loaddb_razor\\pages\\stu\\view.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|solutionrelative:loaddb_razor\\pages\\stu\\view.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\loaddb_razor\\pages\\stu\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|solutionrelative:loaddb_razor\\pages\\stu\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\loaddb_razor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|solutionrelative:loaddb_razor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\loaddb_razor\\pages\\stu\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}|LoadDB_Razor\\LoadDB_Razor.csproj|solutionrelative:loaddb_razor\\pages\\stu\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 20,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
@@ -94,6 +86,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:16:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
@@ -103,71 +99,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Add.cshtml.cs",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\Add.cshtml.cs",
-              "RelativeDocumentMoniker": "LoadDB_Razor\\Pages\\Stu\\Add.cshtml.cs",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\Add.cshtml.cs",
-              "RelativeToolTip": "LoadDB_Razor\\Pages\\Stu\\Add.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Title": "Update.cshtml.cs",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\Update.cshtml.cs",
+              "RelativeDocumentMoniker": "LoadDB_Razor\\Pages\\Stu\\Update.cshtml.cs",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\Update.cshtml.cs",
+              "RelativeToolTip": "LoadDB_Razor\\Pages\\Stu\\Update.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T10:19:16.607Z",
+              "WhenOpened": "2024-10-02T06:50:21.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\Add.cshtml",
-              "RelativeDocumentMoniker": "LoadDB_Razor\\Pages\\Stu\\Add.cshtml",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\Add.cshtml",
-              "RelativeToolTip": "LoadDB_Razor\\Pages\\Stu\\Add.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\Update.cshtml",
+              "RelativeDocumentMoniker": "LoadDB_Razor\\Pages\\Stu\\Update.cshtml",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\Update.cshtml",
+              "RelativeToolTip": "LoadDB_Razor\\Pages\\Stu\\Update.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF8AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T10:16:00.341Z",
+              "WhenOpened": "2024-10-02T06:44:52.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "View.cshtml.cs",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\View.cshtml.cs",
-              "RelativeDocumentMoniker": "LoadDB_Razor\\Pages\\Stu\\View.cshtml.cs",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\View.cshtml.cs",
-              "RelativeToolTip": "LoadDB_Razor\\Pages\\Stu\\View.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T09:29:49.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "View.cshtml",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\View.cshtml",
-              "RelativeDocumentMoniker": "LoadDB_Razor\\Pages\\Stu\\View.cshtml",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Pages\\Stu\\View.cshtml",
-              "RelativeToolTip": "LoadDB_Razor\\Pages\\Stu\\View.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T09:24:01.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Program.cs",
-              "RelativeDocumentMoniker": "LoadDB_Razor\\Program.cs",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\LoadDB_Razor\\Program.cs",
-              "RelativeToolTip": "LoadDB_Razor\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T09:18:03.397Z",
-              "EditorCaption": ""
             }
           ]
         }

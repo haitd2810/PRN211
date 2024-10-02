@@ -15,7 +15,7 @@ namespace LoadDB_Razor.Pages.Stu
         }
         public void OnGet()
         {
-            Stds = con.Students.Include(x => x.Depart).Take(10).ToList();
+            Stds = con.Students.Include(x => x.Depart).ToList();
         }
     }
 }

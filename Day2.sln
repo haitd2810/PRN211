@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoXML_Json", "DemoXML_Jso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Razor", "Razor\Razor.csproj", "{732D8E5F-0C0D-4814-8DE8-DF77D7B342C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadDB_Razor", "LoadDB_Razor\LoadDB_Razor.csproj", "{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadDB_Razor", "LoadDB_Razor\LoadDB_Razor.csproj", "{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
