@@ -61,7 +61,8 @@
         <input type="submit" value="Save" class="btn btn-success" />
     </div>
 </form> *@
-<p>Checkbox - Checkbox</p>
+
+@* <p>combobox - Checkbox</p>
 <form class="col-12" method="post" asp-page="Edit">
     <div class="row">
         <div class="col-3">
@@ -93,7 +94,7 @@
             @foreach (var dp in Model.DList)
             {
                 <div>
-                    <input asp-for="@Model.std.DepartId" value="@dp.Id" type="checkbox">
+                    <input name="department" onchange="Check(this)" value="@dp.Id" type="checkbox" checked="@(dp.Id == Model.std.DepartId)">
                     <span>@dp.Name</span>
                 </div>
             }
@@ -117,7 +118,8 @@
     <div>
         <input type="submit" value="Save" class="btn btn-success" />
     </div>
-</form>
+</form> *@
+
 @* <p>ComboBox - Radio</p>
 <form class="col-12" method="post" asp-page="Edit">
     <div class="row">
@@ -150,7 +152,7 @@
             @foreach (var dp in Model.DList)
             {
                 <div>
-                    <input asp-for="@Model.std.DepartId" id="department-@dp.Id" type="radio" value="@dp.Id" checked="@(Model.std.DepartId == dp.Id)">
+                    <input asp-for="@Model.std.DepartId" name="department" id="department-@dp.Id" type="radio" value="@dp.Id" checked="@(Model.std.DepartId == dp.Id)">
                     <span>@dp.Name</span>
                 </div>
             }
@@ -175,3 +177,258 @@
         <input type="submit" value="Save" class="btn btn-success" />
     </div>
 </form> *@
+
+@* <p>radio - Radio</p>
+<form class="col-12" method="post" asp-page="Edit">
+    <div class="row">
+        <div class="col-3">
+            <label>ID</label>
+            <div>
+                <input readonly class="form-control" asp-for="@Model.std.Id" type="number" value="@Model.std.Id" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>Name</label>
+            <div>
+                <input required asp-for="@Model.std.Name" class="form-control" type="text" value="@Model.std.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Gender</label>
+            <div>
+                <input asp-for="@Model.std.Gender" checked="@(Model.std.Gender == true)" type="radio" value="true"/>
+                <span>Male</span>
+                <input asp-for="@Model.std.Gender" checked="@(Model.std.Gender == false)" type="radio" value="false" />
+                <span>Female</span>
+            </div>
+        </div>
+        <div class="col-3">
+            <label>Department</label>
+            @foreach (var dp in Model.DList)
+            {
+                <div>
+                    <input asp-for="@Model.std.DepartId" name="department" id="department-@dp.Id" type="radio" value="@dp.Id" checked="@(Model.std.DepartId == dp.Id)">
+                    <span>@dp.Name</span>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Date Of Birth</label>
+            <div>
+                <input required asp-for="@Model.std.Dob" type="date" value="@Model.std.Dob?.ToString("yyyy-MM-dd")" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>GPA</label>
+            <div>
+                <input required asp-for="@Model.std.Gpa" class="form-control" type="text" value="@Model.std.Gpa" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</form> *@
+
+@* <p>radio - Combobox</p>
+<form class="col-12" method="post" asp-page="Edit">
+    <div class="row">
+        <div class="col-3">
+            <label>ID</label>
+            <div>
+                <input readonly class="form-control" asp-for="@Model.std.Id" type="number" value="@Model.std.Id" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>Name</label>
+            <div>
+                <input required asp-for="@Model.std.Name" class="form-control" type="text" value="@Model.std.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Gender</label>
+            <div>
+                <input asp-for="@Model.std.Gender" checked="@(Model.std.Gender == true)" type="radio" value="true" />
+                <span>Male</span>
+                <input asp-for="@Model.std.Gender" checked="@(Model.std.Gender == false)" type="radio" value="false" />
+                <span>Female</span>
+            </div>
+        </div>
+        <div class="col-3">
+            <label>Department</label>
+            <div>
+                <select name="department">
+                    @foreach (var dp in Model.DList)
+                    {
+                        <option value="@dp.Id" selected="@(dp.Id == Model.std.DepartId)"> @dp.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Date Of Birth</label>
+            <div>
+                <input required asp-for="@Model.std.Dob" type="date" value="@Model.std.Dob?.ToString("yyyy-MM-dd")" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>GPA</label>
+            <div>
+                <input required asp-for="@Model.std.Gpa" class="form-control" type="text" value="@Model.std.Gpa" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</form> *@
+
+@* <p>checkbox - Combobox</p>
+<form class="col-12" method="post" asp-page="Edit">
+    <div class="row">
+        <div class="col-3">
+            <label>ID</label>
+            <div>
+                <input readonly class="form-control" asp-for="@Model.std.Id" type="number" value="@Model.std.Id" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>Name</label>
+            <div>
+                <input required asp-for="@Model.std.Name" class="form-control" type="text" value="@Model.std.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Gender</label>
+            <div>
+                <input id="male" name="Gender" onchange="checkGender(this)" value="Male" type="checkbox" checked="@(Model.std.Gender == true)">
+                <span>Male</span>
+                <input id="female" name="Gender" onchange="checkGender(this)" value="Female" type="checkbox" checked="@(Model.std.Gender == false)">
+                <span>Female</span>
+            </div>
+        </div>
+        <div class="col-3">
+            <label>Department</label>
+            <div>
+                <select name="department">
+                    @foreach (var dp in Model.DList)
+                    {
+                        <option value="@dp.Id" selected="@(dp.Id == Model.std.DepartId)"> @dp.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Date Of Birth</label>
+            <div>
+                <input required asp-for="@Model.std.Dob" type="date" value="@Model.std.Dob?.ToString("yyyy-MM-dd")" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>GPA</label>
+            <div>
+                <input required asp-for="@Model.std.Gpa" class="form-control" type="text" value="@Model.std.Gpa" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</form> *@
+
+<p>combobox - Combobox</p>
+<form class="col-12" method="post" asp-page="Edit">
+    <div class="row">
+        <div class="col-3">
+            <label>ID</label>
+            <div>
+                <input readonly class="form-control" asp-for="@Model.std.Id" type="number" value="@Model.std.Id" />
+            </div>
+        </div>
+        <div class="col-3">
+            <label>Name</label>
+            <div>
+                <input required asp-for="@Model.std.Name" class="form-control" type="text" value="@Model.std.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Gender</label>
+            <div>
+                <select asp-for="@Model.std.Gender" name="Gender">
+                    <option value="Male" selected="@(Model.std.Gender)">Male</option>
+                    <option value="Female" selected="@(Model.std.Gender==false)">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-3">
+            <label>Department</label>
+            <div>
+                <select name="department">
+                    @foreach (var dp in Model.DList)
+                    {
+                        <option value="@dp.Id" selected="@(dp.Id == Model.std.DepartId)"> @dp.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>Date Of Birth</label>
+            <div>
+                <input required asp-for="@Model.std.Dob" type="date" value="@Model.std.Dob?.ToString("yyyy-MM-dd")" />
+            </div>
+
+        </div>
+        <div class="col-3">
+            <label>GPA</label>
+            <div>
+                <input required asp-for="@Model.std.Gpa" class="form-control" type="text" value="@Model.std.Gpa" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </div>
+</form>
+
+<script>
+    function Check(checkbox) {
+        var checkboxes = document.getElementsByName('department');
+
+        checkboxes.forEach(function (cb) {
+            if (cb !== checkbox) {
+                cb.checked = false;
+            }
+        });
+    }
+    function checkGender(checkbox) {
+        var checkboxes = document.getElementsByName('Gender');
+        checkbox.setAttribute("asp-for", "helloButton");
+        checkboxes.forEach(function (cbgen) {
+            if (cbgen !== checkbox) {
+                cbgen.checked = false;
+            }
+        });
+    }
+</script>

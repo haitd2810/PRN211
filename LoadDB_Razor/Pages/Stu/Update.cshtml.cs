@@ -32,8 +32,8 @@ namespace LoadDB_Razor.Pages.Stu
                 if (st != null)
                 {
                     st.Name = std.Name;
-                    st.Gender = std.Gender;
-                    st.DepartId = std.DepartId;
+                    st.Gender = Request.Form["Gender"] == "Male";
+                    st.DepartId =  std.DepartId?? Request.Form["department"];
                     st.Gpa = std.Gpa;
                     st.Dob = std.Dob;
                     PRN221Context.Ins.Students.Update(st);
