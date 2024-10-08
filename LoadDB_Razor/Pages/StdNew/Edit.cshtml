@@ -1,0 +1,153 @@
+﻿@page
+@model LoadDB_Razor.Pages.StdNew.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+@* //Using combo box for student *@
+<@* h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Student.Id" />
+            <div class="form-group">
+                <label asp-for="Student.Name" class="control-label"></label>
+                <input asp-for="Student.Name" class="form-control" />
+                <span asp-validation-for="Student.Name" class="text-danger"></span>
+            </div>
+            <div class ="form-group">
+                <label class="control-label">Gender</label>
+                    <select asp-for="Student.Gender" class="form-control">
+                        <option value="true">Male</option>
+                        <option value="false">Female</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.DepartId" class="control-label"></label>
+                <select asp-for="Student.DepartId" class="form-control" asp-items="ViewBag.DepartId"></select>
+                <span asp-validation-for="Student.DepartId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.Dob" class="control-label"></label>
+                <input asp-for="Student.Dob" class="form-control" />
+                <span asp-validation-for="Student.Dob" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.Gpa" class="control-label"></label>
+                <input asp-for="Student.Gpa" class="form-control" />
+                <span asp-validation-for="Student.Gpa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div> *@
+
+@* //using gender with radio *@
+    @* <h4>
+    Student</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Student.Id" />
+                <div class="form-group">
+                    <label asp-for="Student.Name" class="control-label"></label>
+                    <input asp-for="Student.Name" class="form-control" />
+                    <span asp-validation-for="Student.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label>
+                        <input type="radio" name="gender" asp-for="Student.Gender" value="false" />
+                        <span>Female</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" asp-for="Student.Gender" value="true" />
+                        <span>Male</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Student.DepartId" class="control-label"></label>
+                    <select asp-for="Student.DepartId" class="form-control" asp-items="ViewBag.DepartId"></select>
+                    <span asp-validation-for="Student.DepartId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Student.Dob" class="control-label"></label>
+                    <input asp-for="Student.Dob" class="form-control" />
+                    <span asp-validation-for="Student.Dob" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Student.Gpa" class="control-label"></label>
+                    <input asp-for="Student.Gpa" class="form-control" />
+                    <span asp-validation-for="Student.Gpa" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div> *@
+
+    @* Department with radio *@
+    <h4>
+    Student</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Student.Id" />
+                <div class="form-group">
+                    <label asp-for="Student.Name" class="control-label"></label>
+                    <input asp-for="Student.Name" class="form-control" />
+                    <span asp-validation-for="Student.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label>
+                        <input type="radio" name="gender" asp-for="Student.Gender" value="false" />
+                        <span>Female</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" asp-for="Student.Gender" value="true" />
+                        <span>Male</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Student.DepartId" class="control-label"></label>
+                    @foreach (var d in ViewBag.DepartId)
+                    {
+                        <input type="radio" asp-for="Student.DepartId" value="@d.Value" />
+                        @d.Text <br />
+                    }
+            </div>
+                <div class="form-group">
+                    <label asp-for="Student.Dob" class="control-label"></label>
+                    <input asp-for="Student.Dob" class="form-control" />
+                    <span asp-validation-for="Student.Dob" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Student.Gpa" class="control-label"></label>
+                    <input asp-for="Student.Gpa" class="form-control" />
+                    <span asp-validation-for="Student.Gpa" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
