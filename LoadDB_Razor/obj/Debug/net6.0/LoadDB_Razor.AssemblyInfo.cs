@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoadDB_Razor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f34bbe06bdb314eeffffe2b2298ebe09df4677b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c4151234c47ce24d9f7a871480a85a4f1077718")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoadDB_Razor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoadDB_Razor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,3 +1,5 @@
-//Task: làm CRUD (sử dụng design generate code)
-//tao gender = combobox, radio
-// department: thay thế combobox = radio
+//Task: Làm sort theo từng cột của Student (đơn và kép)
+// có thể tạo 1 form ẩn cho từng cột và 1 flag để đánh dấu (True: ascending; False: descending)
+// làm filter (Đơn và kép)
+// Thứ 2 tuần sau thì sẽ giải quyết bài toán này
+// làm thêm bài search
