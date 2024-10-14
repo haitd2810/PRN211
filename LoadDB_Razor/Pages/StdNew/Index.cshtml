@@ -10,12 +10,17 @@
 
 <p>
     <a asp-page="Create">Create New</a>
+    <p>@Model.state</p>
 </p>
 <table class="table">
     <thead>
         <tr>
+            <th>ID</th>
             <th>
-                @Html.DisplayNameFor(model => model.Student[0].Name)
+                <form method="post">
+                    <input type="text" hidden name="state" asp-for="@Model.state" value="@(Model.state+1)" />
+                    <input type="submit" value="Fullname"/>
+                </form>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Student[0].Gender)
@@ -35,6 +40,9 @@
     <tbody>
 @foreach (var item in Model.Student) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -59,3 +67,9 @@
 }
     </tbody>
 </table>
+
+@* yêu cầu chỉ riêng thằng name,
+tạo một button header, khi click chuột lần 1 thì nó sẽ sort dữ liệu theo tăng dần (Alphabet),
+click chuột lần tiếp theo -> giảm dần (Alphabet)
+click chuột lần 3 thì (disorder sort theo id tăng dần)
+click chuột lần 4 thì quay lại giống như lần 1 *@
