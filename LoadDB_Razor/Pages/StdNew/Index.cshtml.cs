@@ -12,6 +12,7 @@ namespace LoadDB_Razor.Pages.StdNew
     public class IndexModel : PageModel
     {
         private readonly LoadDB_Razor.Models.PRN221Context _context;
+        [BindProperty]
         public int state { get; set; } = 0;
         bool firstLoad = true;
         public IndexModel(LoadDB_Razor.Models.PRN221Context context)

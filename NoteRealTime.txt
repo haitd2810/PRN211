@@ -1,0 +1,84 @@
+- bài học hôm nay: tìm hiểu và sử dụng SignalR
+- Tìm hiểu về realtime
+- tạo example liên quan đến SignalR
+
+SIgnal R
+
+- Thường được sử dụng với chat, message (hôm nay sẽ không tìm hiểu)
+- chủ yếu hôm nay sẽ tìm hiểu về làm việc Signal R cho mô hình Razor page
+
+mô hình web truyền thống:
+	user gửi data tới server
+	server thực hiện tính toán
+	server trả về result cho người dùng
+
+Real time web
+	User và server kết nối tự động
+	Server sẽ liên tục gửi tín hiệu tới user qua bất kỳ thao tác nào (server tự động sendback lại bất kỳ tín hiệu nào)
+
+Ứng dụng realtime trong thực tế: 
+	truyền thống: ứng dụng trong việc tán gái :v chàng trai hỏi (chủ động hỏi) và cô gái trả lời (cô gái độc thân nhận được data)
+	realtime: nếu cô gái đã chia tay người yêu, thì giả sử cô gái thay đổi trạng thái thành (độc thân) thì các bạn nam khác sẽ tự động được nhận tín hiệu (tự động nhận tín hiệu và truyền tín hiệu
+	cho toàn bộ client)
+	
+realtime: dùng cơ chế push (đẩy từ server về client)
+		  dùng cơ chế pull (server ra lệnh cho client trả data về)
+		  => 2 technology (khác nhau hoàn toàn)
+
+SignalR: 
+	được ứng dụng cho rất nhiều application(chat, stock market, gaming, dashboard)
+	
+keyword: remote procedure call (gọi method từ xa) (trên phía client)
+
+Realtime: gửi tin nhắn (thông báo) cho toàn bộ client
+
+
+Hub: 
+	ví dụ: hộp (hộp đựng kết quả) để trước cửa phòng bác sĩ (đây gọi là hub) nghĩa là khi cta đẩy dữ liệu vào, thì nó sẽ tự động nhận được dữ liệu trả về
+
+
+
+b1: tạo project
+b2: tạo model và package cần thiết
+b3: tạo apssetings.json
+b4: tạo folder Hub ngay trong project
+b5: tạo class HubServer kế từ từ Hub
+b6: chuột phải vào wwwroot chọn add -> client side library -> dòng đầu: unpkg -> gõ @microsoft/signalr@8.0.7 -> chọn choose specific  files -> chọn dist -> chọn browser ->  chọn signalr.js
+b7: add builder.Services.AddSignalR(); vào program.cs
+b8: add app.MapHub<HubServer>("/hub"); vào gần cuối program.cs (HubServer ở đây là tên class đã thêm ở bước 5)
+b9: add <script src="~/microsoft/signalr/dist/browser/signalr.js"></script> ngay trên <script src="~/js/site.js" asp-append-version="true"></script> của file _layout.csthml
+b10: add:
+
+"use strict";
+var con = new signalR.HubConnectionBuilder().withUrl("/hub").build();
+con.on("LoadAll", function () { location.reload(); });
+con.start().then().catch(function (err)){
+    return console.log(err.toString());
+}
+ vào site.js
+ 
+b11: khai báo thêm biến trong create.cshtml.cs: 
+private readonly IHubContext<HubServer> _hub;
+public CreateModel(LoadDB_Razor.Models.PRN221Context context, IHubContext<HubServer> _hub)
+{
+    _context = context;
+    this._hub = _hub;
+}
+
+b12: add code sau để chạy realtime:
+await _hub.Clients.All.SendAsync("LoadAll"); (có thể có await hoặc không)
+
+ví dụ:
+public async Task<IActionResult> OnPostAsync()
+{
+  if (!ModelState.IsValid || _context.Students == null || Student == null)
+    {
+        return Page();
+    }
+
+    _context.Students.Add(Student);
+    await _context.SaveChangesAsync();
+    await _hub.Clients.All.SendAsync("LoadAll");
+
+    return RedirectToPage("./Index");
+}

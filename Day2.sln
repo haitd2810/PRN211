@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Razor", "Razor\Razor.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadDB_Razor", "LoadDB_Razor\LoadDB_Razor.csproj", "{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_SignalR", "CRUD_SignalR\CRUD_SignalR.csproj", "{9035CA96-8EF0-4998-A317-9A71B523B98A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DB7D649-03FD-4B9A-8D7D-F1B0564749FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9035CA96-8EF0-4998-A317-9A71B523B98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9035CA96-8EF0-4998-A317-9A71B523B98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9035CA96-8EF0-4998-A317-9A71B523B98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9035CA96-8EF0-4998-A317-9A71B523B98A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
