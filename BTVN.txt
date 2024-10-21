@@ -1,2 +1,3 @@
 //Task:
-// Làm filter (sử dụng combobox và radio)
+// Gõ lại code slide (8-9) NetWorking
+// đọc thêm khái niệm về http client,...

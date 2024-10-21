@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9035CA96-8EF0-4998-A317-9A71B523B98A}|CRUD_SignalR\\CRUD_SignalR.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\crud_signalr\\pages\\std\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9035CA96-8EF0-4998-A317-9A71B523B98A}|CRUD_SignalR\\CRUD_SignalR.csproj|solutionrelative:crud_signalr\\pages\\std\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE28CB0E-0553-47D5-85D7-E5080FB08C16}|NetWorking\\NetWorking.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\networking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE28CB0E-0553-47D5-85D7-E5080FB08C16}|NetWorking\\NetWorking.csproj|solutionrelative:networking\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9035CA96-8EF0-4998-A317-9A71B523B98A}|CRUD_SignalR\\CRUD_SignalR.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\crud_signalr\\pages\\std\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9035CA96-8EF0-4998-A317-9A71B523B98A}|CRUD_SignalR\\CRUD_SignalR.csproj|solutionrelative:crud_signalr\\pages\\std\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{150CC5D1-C2D0-485E-A8F5-A89C191BA20E}|NetworkingWPF\\NetworkingWPF.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\networkingwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{150CC5D1-C2D0-485E-A8F5-A89C191BA20E}|NetworkingWPF\\NetworkingWPF.csproj|solutionrelative:networkingwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9035CA96-8EF0-4998-A317-9A71B523B98A}|CRUD_SignalR\\CRUD_SignalR.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\crud_signalr\\models\\prn221context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9035CA96-8EF0-4998-A317-9A71B523B98A}|CRUD_SignalR\\CRUD_SignalR.csproj|solutionrelative:crud_signalr\\models\\prn221context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{150CC5D1-C2D0-485E-A8F5-A89C191BA20E}|NetworkingWPF\\NetworkingWPF.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\networkingwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{150CC5D1-C2D0-485E-A8F5-A89C191BA20E}|NetworkingWPF\\NetworkingWPF.csproj|solutionrelative:networkingwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9035CA96-8EF0-4998-A317-9A71B523B98A}|CRUD_SignalR\\CRUD_SignalR.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\crud_signalr\\pages\\std\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9035CA96-8EF0-4998-A317-9A71B523B98A}|CRUD_SignalR\\CRUD_SignalR.csproj|solutionrelative:crud_signalr\\pages\\std\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150CC5D1-C2D0-485E-A8F5-A89C191BA20E}|NetworkingWPF\\NetworkingWPF.csproj|e:\\fptuniversity\\2024\\fall24\\prn221\\exerciseonclass\\code_crud_wpf\\prn211\\networkingwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{150CC5D1-C2D0-485E-A8F5-A89C191BA20E}|NetworkingWPF\\NetworkingWPF.csproj|solutionrelative:networkingwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,28 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:21:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:20:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:20:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_SignalR\\Pages\\Std\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "CRUD_SignalR\\Pages\\Std\\Delete.cshtml.cs",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_SignalR\\Pages\\Std\\Delete.cshtml.cs",
-              "RelativeToolTip": "CRUD_SignalR\\Pages\\Std\\Delete.cshtml.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAgwBQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:00:16.096Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
@@ -55,15 +50,49 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\NetworkingWPF\\App.xaml",
+              "RelativeDocumentMoniker": "NetworkingWPF\\App.xaml",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\NetworkingWPF\\App.xaml",
+              "RelativeToolTip": "NetworkingWPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-21T10:26:01.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\NetworkingWPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "NetworkingWPF\\MainWindow.xaml",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\NetworkingWPF\\MainWindow.xaml",
+              "RelativeToolTip": "NetworkingWPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-21T10:23:34.261Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_SignalR\\Pages\\Std\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "CRUD_SignalR\\Pages\\Std\\Create.cshtml.cs",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_SignalR\\Pages\\Std\\Create.cshtml.cs",
-              "RelativeToolTip": "CRUD_SignalR\\Pages\\Std\\Create.cshtml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\NetworkingWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "NetworkingWPF\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\NetworkingWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "NetworkingWPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:34:33.816Z",
+              "WhenOpened": "2024-10-21T10:23:33.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\NetWorking\\Program.cs",
+              "RelativeDocumentMoniker": "NetWorking\\Program.cs",
+              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\NetWorking\\Program.cs",
+              "RelativeToolTip": "NetWorking\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:13:03.003Z",
               "EditorCaption": ""
             },
             {
@@ -76,21 +105,7 @@
               "RelativeToolTip": "CRUD_SignalR\\Pages\\Std\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T07:34:31.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PRN221Context.cs",
-              "DocumentMoniker": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_SignalR\\Models\\PRN221Context.cs",
-              "RelativeDocumentMoniker": "CRUD_SignalR\\Models\\PRN221Context.cs",
-              "ToolTip": "E:\\FPTUniversity\\2024\\Fall24\\PRN221\\ExerciseOnClass\\Code_CRUD_WPF\\PRN211\\CRUD_SignalR\\Models\\PRN221Context.cs",
-              "RelativeToolTip": "CRUD_SignalR\\Models\\PRN221Context.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T07:33:56.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T16:48:12.382Z"
             }
           ]
         }
